@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.album-list {
+    display: grid;
+    grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
+        ' and-justice-for-all the-black-album load';
+}
+
+.album-box{
+    gap: 10px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+#kill-em-all {
+    background-image: url("../img/KEA.webp");
+    background-repeat: no-repeat;
+}
+
+#ride-the-lightning{
+    background-image: url("../img/RTL.webp");
+    background-repeat: no-repeat;
+}
+
+#master-of-puppets{
+    background-image: url("../img/MOP.webp");
+    background-repeat: no-repeat;
+}
+
+#and-justice-for-all{
+    background-image: url("../img/AJFA.webp");
+    background-repeat: no-repeat;
+}
