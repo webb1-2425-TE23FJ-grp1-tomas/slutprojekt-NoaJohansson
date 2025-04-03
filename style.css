@@ -2,38 +2,87 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: lightgray;
+    margin: 0;
+
 }
 
-.album-list {
-    display: grid;
-    grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
-        ' and-justice-for-all the-black-album load';
+a{
+    text-decoration: none;
 }
 
-.album-box{
+.album-box {
     gap: 10px;
     border-radius: 20px;
     height: 300px;
+    background-repeat: no-repeat;
+    color: gray;
 }
 
 #kill-em-all {
-    background-image: url("../img/KEA.webp");
-    background-repeat: no-repeat;
+    background-image: url("../img/KEA-small.webp");
 }
 
-#ride-the-lightning{
-    background-image: url("../img/RTL.webp");
-    background-repeat: no-repeat;
+#ride-the-lightning {
+    background-image: url("../img/RTL-small.webp");
 }
 
-#master-of-puppets{
-    background-image: url("../img/MOP.webp");
-    background-repeat: no-repeat;
+#master-of-puppets {
+    background-image: url("../img/MOP-small.webp");
 }
 
-#and-justice-for-all{
-    background-image: url("../img/AJFA.webp");
-    background-repeat: no-repeat;
+#and-justice-for-all {
+    background-image: url("../img/AJFA-small.webp");
+}
+
+#the-black-album {
+    background-image: url("../img/TBA-small.webp");
+}
+
+#load {
+    background-image: url("../img/load-small.webp");
+}
+
+#reload {
+    background-image: url("../img/reload-small.webp");
+}
+
+#st-anger {
+    background-image: url("../img/Stanger-small.webp");
+}
+
+#death-magnetic {
+    background-image: url("../img/DM-small.webp");
+}
+
+#hardwired-to-self-destruct {
+    background-image: url("../img/HWTSF-small.webp");
+}
+
+#seasons {
+    background-image: url("../img/72seasons-small.webp");
+}
+
+@media screen and (min-width: 600px) {
+    .album-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'kill-em-all ride-the-lightning '
+            ' master-of-puppets and-justice-for-all  '
+            'the-black-album load'
+        ;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .album-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
+            '  and-justice-for-all the-black-album load '
+        ;
+    }
+
 }
