@@ -14,63 +14,23 @@ a{
 
 .album-box {
     gap: 10px;
-    border-radius: 20px;
-    height: 300px;
-    background-repeat: no-repeat;
+    border-radius: 8px;
     color: gray;
+    border: solid thin;
+    background-color: black ;
 }
 
-#kill-em-all {
-    background-image: url("../img/KEA-small.webp");
-}
 
-#ride-the-lightning {
-    background-image: url("../img/RTL-small.webp");
-}
-
-#master-of-puppets {
-    background-image: url("../img/MOP-small.webp");
-}
-
-#and-justice-for-all {
-    background-image: url("../img/AJFA-small.webp");
-}
-
-#the-black-album {
-    background-image: url("../img/TBA-small.webp");
-}
-
-#load {
-    background-image: url("../img/load-small.webp");
-}
-
-#reload {
-    background-image: url("../img/reload-small.webp");
-}
-
-#st-anger {
-    background-image: url("../img/Stanger-small.webp");
-}
-
-#death-magnetic {
-    background-image: url("../img/DM-small.webp");
-}
-
-#hardwired-to-self-destruct {
-    background-image: url("../img/HWTSF-small.webp");
-}
-
-#seasons {
-    background-image: url("../img/72seasons-small.webp");
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 640px) {
     .album-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'kill-em-all ride-the-lightning '
             ' master-of-puppets and-justice-for-all  '
             'the-black-album load'
+            'reload st-anger'
+            'death-magnetic hardwired-to-self-destruct'
+            '72-seasons'
         ;
     }
 
@@ -82,7 +42,21 @@ a{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
             '  and-justice-for-all the-black-album load '
+            'reload st-anger death-magnetic'
+            'hardwired-to-self-destruct 72-seasons'
         ;
     }
 
 }
+
+/* @media screen and (min-width: 1400px) {
+    .album-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets and-justice-for-all'
+            ' the-black-album load reload st-anger '
+            'death-magnetic hardwired-to-self-destruct 72-seasons' 
+        ;
+    }
+
+} */
