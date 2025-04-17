@@ -13,7 +13,6 @@ a{
 }
 
 .album-box {
-    gap: 10px;
     border-radius: 8px;
     color: gray;
     border: solid thin;
@@ -23,6 +22,7 @@ a{
 
 @media screen and (min-width: 640px) {
     .album-list {
+        gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 'kill-em-all ride-the-lightning '
