@@ -10,6 +10,7 @@ body {
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .album-box {
@@ -17,6 +18,15 @@ a{
     color: gray;
     border: solid thin;
     background-color: black ;
+}
+
+.track-container{
+
+}
+
+.track-card{
+    border: solid thin;
+    border-radius: 6px;
 }
 
 
