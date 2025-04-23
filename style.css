@@ -13,15 +13,25 @@ a{
     color: black;
 }
 
+.album-list{
+
+}
+
 .album-box {
     border-radius: 8px;
     color: gray;
     border: solid thin;
     background-color: black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px;
 }
 
 .track-container{
-
+display: flex;
+flex-direction: column;
+justify-self: center;
 }
 
 .track-card{
@@ -32,41 +42,32 @@ a{
 
 @media screen and (min-width: 640px) {
     .album-list {
-        gap: 10px;
+      gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'kill-em-all ride-the-lightning '
+        /* grid-template-areas: 'kill-em-all ride-the-lightning '
             ' master-of-puppets and-justice-for-all  '
             'the-black-album load'
             'reload st-anger'
             'death-magnetic hardwired-to-self-destruct'
             '72-seasons'
-        ;
+        ; */
+    }
+
+    .album-box{
+        margin: 0px;
     }
 
 }
 
 @media screen and (min-width: 960px) {
     .album-list {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
+        /* grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
             '  and-justice-for-all the-black-album load '
             'reload st-anger death-magnetic'
             'hardwired-to-self-destruct 72-seasons'
-        ;
+        ; */
     }
 
 }
-
-/* @media screen and (min-width: 1400px) {
-    .album-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets and-justice-for-all'
-            ' the-black-album load reload st-anger '
-            'death-magnetic hardwired-to-self-destruct 72-seasons' 
-        ;
-    }
-
-} */
