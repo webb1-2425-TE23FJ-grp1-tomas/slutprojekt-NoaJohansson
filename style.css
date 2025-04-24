@@ -8,12 +8,23 @@ body {
 
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.album-list{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.album-titel {
+margin: 0 auto;
+}
+
+.album-list {
 
 }
 
@@ -21,20 +32,20 @@ a{
     border-radius: 8px;
     color: gray;
     border: solid thin;
-    background-color: black ;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 0px;
 }
 
-.track-container{
-display: flex;
-flex-direction: column;
-justify-self: center;
+.track-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }
 
-.track-card{
+.track-card {
     border: solid thin;
     border-radius: 6px;
 }
@@ -42,7 +53,7 @@ justify-self: center;
 
 @media screen and (min-width: 640px) {
     .album-list {
-      gap: 10px;
+        gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* grid-template-areas: 'kill-em-all ride-the-lightning '
@@ -54,7 +65,7 @@ justify-self: center;
         ; */
     }
 
-    .album-box{
+    .album-box {
         margin: 0px;
     }
 
