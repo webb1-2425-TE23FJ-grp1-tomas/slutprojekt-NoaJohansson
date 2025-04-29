@@ -5,7 +5,6 @@
 body {
     background-color: lightgray;
     margin: 0;
-
 }
 
 a {
@@ -14,19 +13,16 @@ a {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
     padding: 10px;
 }
 
 .album-titel {
-margin: 0 auto;
+    margin: 15px auto;
 }
 
-.album-list {
-
-}
+.album-list {}
 
 .album-box {
     border-radius: 8px;
@@ -39,6 +35,8 @@ margin: 0 auto;
     margin: 10px 0px;
 }
 
+
+
 .track-container {
     display: flex;
     flex-direction: column;
@@ -48,6 +46,12 @@ margin: 0 auto;
 .track-card {
     border: solid thin;
     border-radius: 6px;
+    background-color:silver ;
+}
+
+.track-card:hover {
+    background-color: darkgray;
+    transform: scale(1.15);
 }
 
 
@@ -56,13 +60,6 @@ margin: 0 auto;
         gap: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* grid-template-areas: 'kill-em-all ride-the-lightning '
-            ' master-of-puppets and-justice-for-all  '
-            'the-black-album load'
-            'reload st-anger'
-            'death-magnetic hardwired-to-self-destruct'
-            '72-seasons'
-        ; */
     }
 
     .album-box {
@@ -74,11 +71,6 @@ margin: 0 auto;
 @media screen and (min-width: 960px) {
     .album-list {
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-template-areas: 'kill-em-all ride-the-lightning master-of-puppets'
-            '  and-justice-for-all the-black-album load '
-            'reload st-anger death-magnetic'
-            'hardwired-to-self-destruct 72-seasons'
-        ; */
     }
 
 }
