@@ -4,7 +4,7 @@
 
 body {
     background-color: lightgray;
-    margin: 0;
+    margin: 0px;
 }
 
 a {
@@ -16,6 +16,13 @@ nav {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     padding: 10px;
+}
+
+#start-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .album-titel {
@@ -47,6 +54,7 @@ nav {
     border: solid thin;
     border-radius: 6px;
     background-color:silver ;
+    padding:  0px 10px;
 }
 
 .track-card:hover {
