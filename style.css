@@ -18,6 +18,10 @@ nav {
     padding: 10px;
 }
 
+header nav a:hover{
+transform: scale(1.2);
+}
+
 #start-header{
     display: flex;
     flex-direction: column;
@@ -29,12 +33,9 @@ nav {
     margin: 15px auto;
 }
 
-.album-list {}
-
 .album-box {
     border-radius: 8px;
     color: gray;
-    border: solid thin;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -42,7 +43,21 @@ nav {
     margin: 10px 0px;
 }
 
+.album-box:hover{
+    transform: scale(1.1);
+    color: lightskyblue;
+    box-shadow: 8px 8px 16px darkgrey;
+}
 
+button{
+    width: 100%;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
 
 .track-container {
     display: flex;
@@ -60,6 +75,10 @@ nav {
 .track-card:hover {
     background-color: darkgray;
     transform: scale(1.15);
+}
+
+.temp-color{
+    background-color: lightpink;
 }
 
 
