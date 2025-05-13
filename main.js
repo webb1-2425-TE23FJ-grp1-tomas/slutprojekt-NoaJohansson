@@ -1,10 +1,20 @@
-const bodyconst= document.body
-const buttonconst=document.getElementById("color-button");
-const albumlist=document.getElementsByClassName("albumlist")
+const buttonconst = document.getElementById("color-button");
 
-buttonconst.addEventListener("click" , function(){
+if(buttonconst) {
+    buttonconst.addEventListener("click", function () {
 
-console.log("det fungerar");
-bodyconst.classList.toggle("temp-color")
+    console.log("det fungerar");
+    document.documentElement.style.setProperty('--bodycolor', 'lightpink');
+    localStorage.setItem('bakgrundsfarg', 'lightpink');
+
 
 })
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const savedColor = localStorage.getItem('bakgrundsfarg');
+    console.log(savedColor);
+    if (savedColor) {
+        document.documentElement.style.setProperty('--bodycolor', savedColor);
+    }
+});

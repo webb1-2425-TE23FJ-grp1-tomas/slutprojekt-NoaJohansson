@@ -2,9 +2,13 @@
     box-sizing: border-box;
 }
 
+:root{
+ --bodycolor: lightgray;
+}
+
 body {
-    background-color: lightgray;
     margin: 0px;
+    background-color: var(--bodycolor);
 }
 
 a {
@@ -18,11 +22,11 @@ nav {
     padding: 10px;
 }
 
-header nav a:hover{
-transform: scale(1.2);
+header nav a:hover {
+    transform: scale(1.2);
 }
 
-#start-header{
+#start-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,19 +47,19 @@ transform: scale(1.2);
     margin: 10px 0px;
 }
 
-.album-box:hover{
+.album-box:hover {
     transform: scale(1.1);
     color: lightskyblue;
     box-shadow: 8px 8px 16px darkgrey;
 }
 
-button{
+button {
     width: 100%;
     border-radius: 8px;
     min-height: 200px;
 }
 
-button:hover{
+button:hover {
     transform: scale(1.1);
 }
 
@@ -68,8 +72,8 @@ button:hover{
 .track-card {
     border: solid thin;
     border-radius: 6px;
-    background-color:silver ;
-    padding:  0px 10px;
+    background-color: silver;
+    padding: 0px 10px;
 }
 
 .track-card:hover {
@@ -77,9 +81,9 @@ button:hover{
     transform: scale(1.15);
 }
 
-.temp-color{
+/* .temp-color{
     background-color: lightpink;
-}
+} */
 
 
 @media screen and (min-width: 640px) {
