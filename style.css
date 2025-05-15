@@ -56,7 +56,9 @@ header nav a:hover {
 button {
     width: 100%;
     border-radius: 8px;
-    min-height: 200px;
+    min-height: 150px;
+    background-color: var(--bodycolor);
+    font-size: 30px;
 }
 
 button:hover {
