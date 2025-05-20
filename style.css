@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }
 
-:root{
- --bodycolor: lightgray;
+:root {
+    --bodycolor: lightgray;
 }
 
 body {
@@ -16,9 +16,9 @@ a {
     color: black;
 }
 
-h1{
-     font-family: metallica-font;
-     font-size: 50px;
+h1 {
+    font-family: metallica-font;
+    font-size: 48px;
 }
 
 nav {
@@ -27,8 +27,12 @@ nav {
     padding: 10px;
 }
 
-body header p{
+body header p {
     margin: 10px;
+}
+
+header nav a {
+    height: 50px;
 }
 
 header nav a:hover {
