@@ -16,6 +16,11 @@ a {
     color: black;
 }
 
+h1{
+     font-family: metallica-font;
+     font-size: 50px;
+}
+
 nav {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -87,10 +92,10 @@ button:hover {
     transform: scale(1.15);
 }
 
-/* .temp-color{
-    background-color: lightpink;
-} */
-
+@font-face {
+    font-family: metallica-font;
+    src: url(font/Metallica.ttf);
+}
 
 @media screen and (min-width: 640px) {
     .album-list {
